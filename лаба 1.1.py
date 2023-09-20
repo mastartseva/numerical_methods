@@ -1,6 +1,6 @@
 def function(x):
     return (x - 2) * ((x - 1) ** 3) * ((x - 3) ** 2)
-def halfdiv(a,b,max_iter):
+def dih(a,b,max_iter):
     e=0.01
     iter_count=0
     if function(a)*function(b)<0 and iter_count<max_iter:
@@ -18,7 +18,7 @@ def halfdiv(a,b,max_iter):
         print("Нет корней")
 
 a,b=map(float,input().split())    
-print(halfdiv(a,b,20))
+print(dih(a,b,20))
 
 
         
